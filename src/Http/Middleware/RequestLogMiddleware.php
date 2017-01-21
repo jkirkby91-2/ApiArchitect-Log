@@ -3,7 +3,7 @@
 namespace ApiArchitect\Log\Http\Middleware;
 
 use Closure;
-use Zend\Diactoros\ServerRequest;
+use Psr\Http\Message\ServerRequestInterface;
 use ApiArchitect\Log\Events\RequestLogEvent;
 use ApiArchitect\Log\Repositories\RequestLogRepository;
 
@@ -33,10 +33,8 @@ class RequestLogMiddleware
      * @param Closure $next
      * @return mixed
      */
-    public function handle(ServerRequest $request, Closure $next)
+    public function handle(ServerRequestInterface $request, Closure $next)
     {
-//        dd($request);
-//        $guzzleRequest = new \GuzzleHttp\Psr7\ServerRequest($request->getMethod(),$request->getUri(),$request->headers->all(),$request->getContent());
         $this->repository->createLog($request);
         return $next($request);
     }
