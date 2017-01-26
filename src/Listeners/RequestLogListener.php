@@ -34,7 +34,7 @@ class RequestLogEventListener implements ShouldQueue
      * @param RequestLogEvent $requestLogEvent
      * @param RequestLogRepository $repo
      */
-    public function __construct(RequestLogEvent $requestLogEvent,RequestLogRepository $repo)
+    public function __construct(RequestLogEvent $requestLogEvent, RequestLogRepository $repo)
     {
         $this->requestEvent = $requestLogEvent;
 

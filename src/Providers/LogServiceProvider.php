@@ -4,6 +4,14 @@ namespace ApiArchitect\Log\Providers;
 
 use ApiArchitect\Log\Providers\RequestLogRepositoryServiceProvider;
 
+/**
+ * Class LogServiceProvider
+ *
+ * Service provider fo ApiArchitect\Log 
+ *
+ * @package ApiArchitect\Log
+ * @author James Kirkby <jkirkby91@gmail.com>
+ */
 class LogServiceProvider extends \Illuminate\Support\ServiceProvider
 {
     /**

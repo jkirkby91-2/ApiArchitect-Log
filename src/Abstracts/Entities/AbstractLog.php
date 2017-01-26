@@ -3,16 +3,14 @@
 namespace ApiArchitect\Log\Abstracts\Entities;
 
 use Doctrine\ORM\Mapping as ORM;
-use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * Class LogEntryAbstract
  *
- * @package app\Abstracts
- * @see Gedmo\Loggable\Entity\AbstractLog
- * @author James Kirkby <hello@jameskirkby.com>
- *
  * @ORM\MappedSuperclass
+ *
+ * @package ApiArchitect\Log
+ * @author James Kirkby <hello@jameskirkby.com>
  */
 abstract class AbstractLog
 {
@@ -23,15 +21,6 @@ abstract class AbstractLog
      */
     protected $id;
 
-//    /**
-//     * @var \Ramsey\Uuid\Uuid
-//     *
-//     * @ORM\Column(type="uuid")
-//     * @ORM\GeneratedValue(strategy="CUSTOM")
-//     * @ORM\CustomIdGenerator(class="Ramsey\Uuid\Doctrine\UuidGenerator")
-//     */
-//    protected $uid;
-
     /**
      * Get id
      *
@@ -41,13 +30,5 @@ abstract class AbstractLog
     {
         return $this->id;
     }
-
-//    /**
-//     * @return \Ramsey\Uuid\Uuid
-//     */
-//    public function getUID()
-//    {
-//        return $this->uid;
-//    }
 
 }

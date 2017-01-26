@@ -8,7 +8,7 @@ use ApiArchitect\Compass\Abstracts\LogEntryAbstract;
  * Class RequestLogEvent
  *
  * @package app\Events
- * @author James Kirkby <hello@jameskirkby.com>
+ * @author James Kirkby <jkirkby91@gmail.com>
  */
 class RequestLogEvent extends LogEntryAbstract
 {
@@ -19,6 +19,7 @@ class RequestLogEvent extends LogEntryAbstract
     {
         //
     }
+
     /**
      * Get the channels the event should be broadcast on.
      *

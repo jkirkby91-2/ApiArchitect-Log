@@ -11,7 +11,7 @@ use ApiArchitect\Log\Repositories\RequestLogRepository;
  * Class RequestLog
  *
  * @package Api\Middleware
- * @author James Kirkby <me@jameskirkby.com>
+ * @author James Kirkby <jkirkby91@gmail.com>
  */
 class RequestLogMiddleware
 {
