@@ -3,7 +3,7 @@
     "description": "Log Utility ApiArchitect.",
     "keywords": ["Log", "ApiArchitect", "lumen"],
     "license": "CC BY-NC-SA",
-    "type": "project",
+    "type": "library",
     "require": {
         "php": ">=5.5.9",
         "guzzlehttp/psr7": "^1.3",
