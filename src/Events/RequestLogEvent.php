@@ -2,7 +2,7 @@
 
 namespace ApiArchitect\Log\Events;
 
-use ApiArchitect\Compass\Abstracts\LogEntryAbstract;
+use ApiArchitect\Log\Abstracts\Entities\AbstractLog;
 
 /**
  * Class RequestLogEvent
@@ -10,7 +10,7 @@ use ApiArchitect\Compass\Abstracts\LogEntryAbstract;
  * @package app\Events
  * @author James Kirkby <jkirkby91@gmail.com>
  */
-class RequestLogEvent extends LogEntryAbstract
+class RequestLogEvent extends AbstractLog
 {
     /**
      * Create a new event instance.

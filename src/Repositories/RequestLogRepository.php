@@ -3,7 +3,7 @@
 namespace ApiArchitect\Log\Repositories;
 
 use ApiArchitect\Log\Entities\RequestLog;
-use Jkirkby91\DoctrineRepositories\DoctrineRepository;
+use ApiArchitect\Compass\Repositories\AbstractRepository;
 
 /**
  * Class RequestLogRepository
@@ -11,7 +11,7 @@ use Jkirkby91\DoctrineRepositories\DoctrineRepository;
  * @package app\Repositories\RequestLogRepository
  * @author James Kirkby <hello@jameskirkby.com>
  */
-class RequestLogRepository extends DoctrineRepository
+class RequestLogRepository extends AbstractRepository
 {
 
     /**

@@ -5,7 +5,7 @@ namespace ApiArchitect\Log\Abstracts\Entities;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Class LogEntryAbstract
+ * Class AbstractLog
  *
  * @ORM\MappedSuperclass
  *
