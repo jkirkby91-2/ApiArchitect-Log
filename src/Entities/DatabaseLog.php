@@ -16,7 +16,7 @@ use ApiArchitect\Log\Abstracts\Entities\AbstractLog;
  *
  * @ORM\Entity
  * @ORM\HasLifecycleCallbacks()
- * @ORM\Table(name="ext_log_entries", indexes={@ORM\Index(name="search_idx", columns={"object_id"})})
+ * @ORM\Table(name="ext_log_entries", indexes={@ORM\Index(name="ext_log_entries_search_idx", columns={"object_id"})})
  * @ORM\Entity(repositoryClass="Gedmo\Loggable\Entity\Repository\LogEntryRepository")
  */
 class DatabaseLog extends AbstractLog implements DatabaseLogContract

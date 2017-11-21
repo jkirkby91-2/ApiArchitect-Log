@@ -20,7 +20,7 @@ use Doctrine\ORM\Event\PreUpdateEventArgs;
  * @ORM\Entity
  * @ORM\HasLifecycleCallbacks()
  * @ORM\Entity(repositoryClass="app\Log\Repositories\RequestLogRepository")
- * @ORM\Table(name="request_log", indexes={@ORM\Index(name="search_idx", columns={"route", "id"})})
+ * @ORM\Table(name="request_log", indexes={@ORM\Index(name="request_log_search_idx", columns={"route", "id"})})
  */
 class RequestLog extends AbstractLog
 {
